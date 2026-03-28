@@ -3,171 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Primary Meta Tags -->
-    <title>Лучшие ­­Экскурсии в Дивногорске</title>
-    <meta name="title" content="Лучшие ­­Экскурсии в Дивногорске">
-    <meta name="description" content="Лучшие ­­Экскурсии в Дивногорске на 2026 год">
-    <meta name="author" content="Денис Кузьмин">
-    <meta name="keywords" content="Лучшие ­­Экскурсии в Дивногорске Лучшие ­­Экскурсии в Дивногорске на 2026 год">
-    
-    <!-- Webmaster Verification -->
+
+    <title>{{ARTICLE_TITLE}}</title>
+    <meta name="title" content="{{ARTICLE_TITLE}}">
+    <meta name="description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="author" content="{{AUTHOR_NAME}}">
+    <meta name="keywords" content="{{ARTICLE_KEYWORDS}}">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="k1naFcMKtZ0AU2hjBnyOV0ByIwQiO-JKxBl57AOcdxU">
-    <meta name="yandex-verification" content="8d159ce0eefc9832">
-    
-    <!-- Open Graph / Facebook -->
+    <link rel="stylesheet" href="/styles.css"/>
+    <meta name="yandex-verification" content="{{YANDEX_VERIFICATION_CODE}}">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="{{ARTICLE_URL}}">
+
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://ekskursii-v-divnogorske.vercel.app">
-    <meta property="og:title" content="Лучшие ­­Экскурсии в Дивногорске">
-    <meta property="og:description" content="Лучшие ­­Экскурсии в Дивногорске на 2026 год">
-    <meta property="og:image" content="https://ekskursii-v-divnogorske.vercel.app/icon.png">
-    <meta property="og:site_name" content="Лучшие ­­Экскурсии в Дивногорске">
+    <meta property="og:url" content="{{ARTICLE_URL}}">
+    <meta property="og:title" content="{{ARTICLE_TITLE}}">
+    <meta property="og:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta property="og:image" content="{{OG_IMAGE_URL}}">
+    <meta property="og:site_name" content="{{SITE_NAME}}">
     <meta property="og:locale" content="ru_RU">
-    <meta property="article:published_time" content="2026-01-10T21:13:42+00:00">
-    <meta property="article:author" content="Денис Кузьмин">
+    <meta property="article:published_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:modified_time" content="{{PUBLISH_DATE_ISO}}">
+    <meta property="article:author" content="{{AUTHOR_NAME}}">
     <meta property="article:section" content="Статьи">
-    
-    <!-- Twitter -->
+    <meta property="article:tag" content="{{ARTICLE_KEYWORDS}}">
+
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://ekskursii-v-divnogorske.vercel.app">
-    <meta name="twitter:title" content="Лучшие ­­Экскурсии в Дивногорске">
-    <meta name="twitter:description" content="Лучшие ­­Экскурсии в Дивногорске на 2026 год">
-    <meta name="twitter:image" content="https://ekskursii-v-divnogorske.vercel.app/icon.png">
-    <meta name="twitter:creator" content="Денис Кузьмин">
-    
-    <!-- Favicon -->
+    <meta name="twitter:url" content="{{ARTICLE_URL}}">
+    <meta name="twitter:title" content="{{ARTICLE_TITLE}}">
+    <meta name="twitter:description" content="{{ARTICLE_DESCRIPTION}}">
+    <meta name="twitter:image" content="{{OG_IMAGE_URL}}">
+    <meta name="twitter:creator" content="{{AUTHOR_NAME}}">
+
     <link rel="icon" type="image/png" href="/icon.png">
     <link rel="apple-touch-icon" href="/icon.png">
-    
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Schema.org JSON-LD -->
+
+
+
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Лучшие ­­Экскурсии в Дивногорске",
-        "description": "Лучшие ­­Экскурсии в Дивногорске на 2026 год",
-        "image": "https://ekskursii-v-divnogorske.vercel.app/icon.png",
-        "datePublished": "2026-01-10T21:13:42+00:00",
-        "dateModified": "2026-01-10T21:13:42+00:00",
-        "author": {
-            "@type": "Person",
-            "name": "Денис Кузьмин",
-            "description": "Эксперт в области культурного туризма и краеведения, обладающий многолетним опытом организации уникальных экскурсий. Автор статьи о необычных экскурсиях в Красноярске, в которой представлены авторские маршруты, раскрывающие скрытые тайны и легенды города. Профессиональные знания о подземной истории Красноярска и богатый опыт работы с местными гидоми-краеведами позволяют погрузить туристов в атмосферу, недоступную для типичного туриста.",
-            "image": "https://ui-avatars.com/api/?name=Денис+Кузьмин&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Лучшие ­­Экскурсии в Дивногорске",
-            "url": "https://ekskursii-v-divnogorske.vercel.app",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://ekskursii-v-divnogorske.vercel.app/icon.png"
+        "@graph": [
+            {
+                "@type": "Article",
+                "headline": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "image": ["{{OG_IMAGE_URL}}"],
+                "datePublished": "{{PUBLISH_DATE_ISO}}",
+                "dateModified": "{{PUBLISH_DATE_ISO}}",
+                "author": {
+                    "@type": "Person",
+                    "name": {{AUTHOR_NAME_JSON}},
+                    "description": {{AUTHOR_DESCRIPTION_JSON}},
+                    "image": "{{AUTHOR_AVATAR}}"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "{{SITE_URL}}/icon.png"
+                    }
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "{{ARTICLE_URL}}"
+                },
+                "articleSection": "Статьи",
+                "wordCount": {{WORD_COUNT}},
+                "timeRequired": "PT{{READING_TIME}}M",
+                "inLanguage": "ru-RU"
+            },
+            {
+                "@type": "Person",
+                "@id": "{{ARTICLE_URL}}#author",
+                "name": {{AUTHOR_NAME_JSON}},
+                "description": {{AUTHOR_DESCRIPTION_JSON}},
+                "image": "{{AUTHOR_AVATAR}}",
+                "jobTitle": "Эксперт"
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": {{SITE_NAME_JSON}},
+                        "item": "{{SITE_URL}}"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Статьи",
+                        "item": "{{SITE_URL}}/articles/"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": {{ARTICLE_TITLE_JSON}},
+                        "item": "{{ARTICLE_URL}}"
+                    }
+                ]
+            },
+            {
+                "@type": "WebPage",
+                "@id": "{{ARTICLE_URL}}#webpage",
+                "url": "{{ARTICLE_URL}}",
+                "name": {{ARTICLE_TITLE_JSON}},
+                "description": {{ARTICLE_DESCRIPTION_JSON}},
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "name": {{SITE_NAME_JSON}},
+                    "url": "{{SITE_URL}}"
+                },
+                "about": {
+                    "@type": "Thing",
+                    "name": {{ARTICLE_TITLE_JSON}}
+                },
+                "inLanguage": "ru-RU"
             }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "https://ekskursii-v-divnogorske.vercel.app"
-        },
-        "articleSection": "Статьи",
-        "wordCount": 1036,
-        "timeRequired": "PT5M"
+        ]
     }
     </script>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="article-header">
-            <div class="header-content">
-                <h1 class="article-title" itemprop="headline">Лучшие ­­Экскурсии в Дивногорске</h1>
-                <div class="article-meta">
-                    <time datetime="2026-01-10T21:13:42+00:00" itemprop="datePublished">10.01.2026</time>
-                    <meta itemprop="dateModified" content="2026-01-10T21:13:42+00:00">
-                    <span class="reading-time" itemprop="timeRequired" content="PT5M">Время чтения: 5 мин</span>
-                </div>
-            </div>
-        </header>
-
-        <!-- Author Section -->
-        <section class="author-section" itemscope itemtype="https://schema.org/Person" itemprop="author">
-            <div class="author-card">
-                <div class="author-avatar">
-                    <img src="https://ui-avatars.com/api/?name=Денис+Кузьмин&amp;size=120&amp;background=4f46e5&amp;color=fff&amp;bold=true" alt="Денис Кузьмин" itemprop="image" onerror="this.src='https://ui-avatars.com/api/?name=Денис+Кузьмин&size=120&background=4f46e5&color=fff&bold=true'">
-                </div>
-                <div class="author-info">
-                    <div class="author-name" itemprop="name">Денис Кузьмин</div>
-                    <p class="author-description" itemprop="description">Эксперт в области культурного туризма и краеведения, обладающий многолетним опытом организации уникальных экскурсий. Автор статьи о необычных экскурсиях в Красноярске, в которой представлены авторские маршруты, раскрывающие скрытые тайны и легенды города. Профессиональные знания о подземной истории Красноярска и богатый опыт работы с местными гидоми-краеведами позволяют погрузить туристов в атмосферу, недоступную для типичного туриста.</p>
-                    <div class="author-badges">
-                        <span class="badge expert" itemprop="jobTitle">Эксперт</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Main Article Content -->
-        <article class="article-content" itemscope itemtype="https://schema.org/Article">
-            <meta itemprop="headline" content="Лучшие ­­Экскурсии в Дивногорске">
-            <meta itemprop="description" content="Лучшие ­­Экскурсии в Дивногорске на 2026 год">
-            <meta itemprop="datePublished" content="2026-01-10T21:13:42+00:00">
-            <meta itemprop="dateModified" content="2026-01-10T21:13:42+00:00">
-            <meta itemprop="timeRequired" content="PT5M">
-            <meta itemprop="wordCount" content="1036">
-            <div class="content-wrapper" itemprop="articleBody">
-                <p><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Узнать больше</a></p><p>Необычные экскурсии в Красноярске — это шанс увидеть город с неожиданной стороны. Здесь собраны уникальные авторские маршруты, которые выйдут за рамки типичного туризма. Это идеальный вариант для тех, кто хочет погрузиться в атмосферу города через призму местных тайн, легенд и скрытых локаций. Все гиды — краеведы и энтузиасты, знающие город изнутри.</p><h2>1) Тайны подземелья: Подземный мир Красноярска</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Погрузитесь в подземную историю города на экскурсии по заброшенным бомбоубежищам и тоннелям времён Великой Отечественной войны. Вы узнаете о секретных объектах, связанных с обороной Красноярска, услышите истории о жизни в условиях военного времени и сможете прочувствовать атмосферу закрытого пространства. Экскурсия проходит в безопасных условиях, с полной поддержкой опытного гида.</p><p>Можно узнать малоизвестные страницы истории<br> Уникальная возможность попасть в места, недоступные обычным туристам<br> Интересные рассказы от местных краеведов</p><p><b>Отзывы</b>: Участники отмечают необычность маршрута, высокий уровень подготовки гида и интригующую атмосферу подземелий. Многие сравнивают впечатления с квестами и приключениями.<br> <b>Цена</b>: 1 900 руб. за человека</p><h2>2) Ночь в музее: Прогулка по музеям Красноярска после закрытия</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Прогулка по музеям Красноярска в ночной тишине — редкая возможность увидеть экспонаты без толп посетителей. Вы побываете в залах, где обычно царит дневная суета, услышите неизвестные истории об экспонатах и даже сможете задать вопросы гиду в формате живого диалога. Экскурсия проводится после официального закрытия музеев.</p><p>Нетипичный формат знакомства с культурой города<br> Свобода перемещения и возможность сфотографировать экспонаты спокойно<br> Глубокие познавательные рассказы от профессионалов</p><p><b>Отзывы</b>: Туристы хвалят атмосферу уединённости и романтики, а также доступность информации в таком формате. Многим запомнились личные истории гида и загадочные детали экспонатов.<br> <b>Цена</b>: 2 400 руб. за человека</p><h2>3) Сквозь время: Поездка на старейшую железнодорожную станцию Сибири</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Путешествие на одну из первых железнодорожных станций Сибири, сохранившую облик XIX века. Вы увидите уникальные постройки, узнаете о роли железной дороги в освоении региона и сможете прокатиться на старинном паровозе (при наличии). Экскурсия рассчитана на любителей истории и техники.</p><p>Возможность увидеть сохранившиеся артефакты дореволюционной эпохи<br> Погружение в историю развития транспорта в Сибири<br> Редкие объекты культурного наследия вне туристических троп</p><p><b>Отзывы</b>: Посетители ценят редкость локации и интересные рассказы о развитии железной дороги. Отмечают, что маршрут отлично подходит как для взрослых, так и для школьников.<br> <b>Цена</b>: 2 700 руб. за человека</p><h2>4) Красноярск глазами граффитчика</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Прогулка с локальным стрит-арт артистом по самым ярким уличным фасадам Красноярска. Вы узнаете, как возникло граффити в городе, какие уличные художники оказали влияние на его развитие, и почему некоторые работы стали символами района. Можно даже попробовать себя в создании собственного граффити (по желанию).</p><p>Интересный взгляд на современное искусство в городе<br> Возможность поучаствовать в процессе создания<br> Общение с местными артистами и понимание их мотивов</p><p><b>Отзывы</b>: Участники отмечают свежесть подхода, креативность программы и возможность увидеть город с другой стороны. Особенно понравилось молодёжи и любителям неформальной культуры.<br> <b>Цена</b>: 2 100 руб. за человека</p><h2>5) Легенды Енисея: Заброшенные маяки и затонувшие корабли</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Маршрут вдоль реки Енисей, посвящённый её тайнам и загадкам. Вы посетите заброшенные маяки, услышите легенды о затонувших суднах, сможете сфотографироваться на фоне водных просторов и узнать больше о природе региона. Экскурсия частично проходит на катере.</p><p>Уникальные природные и исторические локации<br> Возможность прокатиться на катере<br> Легендарные и мистические истории о реке</p><p><b>Отзывы</b>: Люди подчёркивают романтику реки, красивые виды и увлекательные истории. Многие называют это путешествием в прошлое».<br> <b>Цена</b>: 3 600 руб. за человека</p><h2>6) Тайны советского Красноярска: Архитектура и быт</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Экскурсия по советским районам города с акцентом на архитектуру, быт и культуру. Вы узнаете, как строились микрорайоны, какие технологии применялись, как жили люди в разные периоды советской эпохи. Также можно будет попробовать советский чай с пряником в одной из квартир того времени.</p><p>Возможность окунуться в советскую эпоху<br> Атмосферные интерьеры и предметы старины<br> Душевные рассказы о повседневной жизни</p><p><b>Отзывы</b>: Многим понравилась ностальгическая составляющая и возможность увидеть интерьеры советских квартир. Хвалят неспешный темп и доброжелательную атмосферу.<br> <b>Цена</b>: 2 300 руб. за человека</p><h2>7) Заброшенный парк культуры им. Горького</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Посещение давно закрытого парка культуры, который был любимым местом отдыха красноярцев в 70–80-х годах. Сейчас он зарос и стал частью городской легенды. Вы услышите истории о его расцвете и закате, сможете сделать фотографии в стиле руин и узнать, почему парк перестал существовать.</p><p>Редкая возможность попасть в место, которое считается закрытым<br> Интересные воспоминания местных жителей<br> Атмосфера забвения и мистики</p><p><b>Отзывы</b>: Многие отмечают вдохновляющий и немного мистический опыт. Фотографии становятся особенными, а рассказы гида — трогательными и личными.<br> <b>Цена</b>: 2 500 руб. за человека</p><h2>8) Красноярск с крыши мира: Экскурсия на антенную башню</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Подъем на самую высокую точку города — антенную башню, откуда открывается панорамный вид на Красноярск и Енисей. Гид расскажет о планировке города, расположении ключевых достопримечательностей и особенностях архитектуры. Также вы узнаете, как функционирует башня и каково это — работать на высоте.</p><p>Потрясающий вид на город и реку<br> Редкий доступ к закрытому объекту<br> Интересные факты об устройстве города</p><p><b>Отзывы</b>: Участники в восторге от вида и возможности увидеть город с такой высоты. Многие говорят, что это лучший снимок в жизни.<br> <b>Цена</b>: 3 400 руб. за человека</p><h2>9) Красноярская подземка: Тайны метро в воздухе</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>В Красноярске нет метро, но есть его аналог — система подземных переходов и сооружений, использовавшихся как укрытия и хранилища. На этой экскурсии вы узнаете, как они строились, какие функции выполняли и как используются сейчас. Это не просто прогулка — это погружение в городскую мифологию.</p><p>Интересный формат исследования городской инфраструктуры<br> Истории о холодной войне и гражданской обороне<br> Необычная подача информации о городском пространстве</p><p><b>Отзывы</b>: Посетители отмечают необычность маршрута и глубину знаний гида. Многим понравилось, что можно было задавать свои вопросы и получать ответы.<br> <b>Цена</b>: 2 200 руб. за человека</p><h2>10) Наскальные рисунки Шира — древний след в Сибири</h2><a href="https://experience.tripster.ru/experience/Krasnoyarsk/2228-neobyichnyie-marshrutyi/?exp_partner=vk2334064&utm_source=vk2334064&utm_campaign=affiliates&utm_medium=link&erid=Y1jgkD6uB783K4Grye8ZQ1QR8JiF&utm-term=Krasnoyarsk-2228">Подробнее</a><p>Выезд за пределы города к древним наскальным рисункам, возраст которых исчисляется тысячелетиями. Это уникальное археологическое место, где можно увидеть петроглифы, оставленные нашими далёкими предками. Экскурсия включает пикник и объяснение значения символов и фигур.</p><p>Возможность увидеть древнее искусство<br> Прогулка на природе и контакт с историей<br> Интеллектуальное и духовное вдохновение</p><p><b>Отзывы</b>: Многие называют это вдохновляющим путешествием в прошлое. Отмечают важность сохранения таких мест и интерес к культурному наследию.<br> <b>Цена</b>: 4 500 руб. за человека</p><p>Вопросы для закрытия темы "Необычные экскурсии в Красноярске":<br> Какие необычные экскурсии в Красноярске пользуются наибольшей популярностью?<br> Какие подземные локации можно посетить на экскурсиях в Красноярске?<br> Какие экскурсии в Красноярске подойдут любителям истории?<br> Какие необычные экскурсии в Красноярске включают поездки на природу или за город?<br> Какие экскурсии в Красноярске позволят увидеть город с высоты?<br> Какие необычные экскурсии в Красноярске подойдут для любителей стрит-арта?<br> Какие экскурсии в Красноярске включают работу с местными художниками или мастерами?<br> Какова средняя стоимость необычных экскурсий в Красноярске в 2025 году?<br> Какие необычные экскурсии в Красноярске наиболее подходят для семей с детьми?<br> Какие <b>отзывы</b> оставляют участники необычных экскурсий в Красноярске<br>Реклама. Flight Marketplace Admin FZE. ИНН 9909618947</p>
-            </div>
-        </article>
-
-        <!-- Table Section -->
-        <section class="table-section">
-            <h2 class="section-title">Таблица сравнения</h2>
-            <div class="table-container">
-                <table>
-    <thead>
-        <tr>
-            <th>Название</th>
-            <th>Описание</th>
-            <th>Отзывы</th>
-            <th>Цена</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Тайны подземелья</td>
-            <td>Экскурсия по заброшенным бомбоубежищам и тоннелям. Узнайте о секретных объектах и жизни во время войны.</td>
-            <td>Необычность маршрута, высокий уровень подготовки гида, атмосфера подземелий.</td>
-            <td>1 900 руб. за человека</td>
-        </tr>
-        <tr>
-            <td>Ночь в музее</td>
-            <td>Прогулка по музеям после закрытия. Уникальная возможность увидеть экспонаты без толп.</td>
-            <td>Атмосфера уединённости, доступность информации, личные истории гида.</td>
-            <td>2 400 руб. за человека</td>
-        </tr>
-        <tr>
-            <td>Сквозь время</td>
-            <td>Поездка на старейшую железнодорожную станцию.</td>
-            <td>Интересные факты о железнодорожном транспорте, уникальный опыт.</td>
-            <td>Цена уточняется</td>
-        </tr>
-    </tbody>
-</table>
-            </div>
-        </section>
-
-        
-
-        <!-- Footer -->
-        <footer class="article-footer">
-            <div class="footer-content">
-                <p>&copy; 2026 Денис Кузьмин. Все права защищены.</p>
+    <div class="s-bb68-page-shell">
+        <div class="s-bb68-site-topbar" aria-label="Навигация по статье">
+            <div class="s-bb68-site-topbar__brand">
+                <span class="s-bb68-site-topbar__dot" aria-hidden="true"></span>
                 
             </div>
-        </footer>
+            
+        </div>
+
+        <main class="s-bb68-article-layout">
+            <article class="s-bb68-article-card" itemscope itemtype="https://schema.org/Article">
+                <meta itemprop="headline" content="{{ARTICLE_TITLE}}">
+                <meta itemprop="description" content="{{ARTICLE_DESCRIPTION}}">
+                <meta itemprop="datePublished" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="dateModified" content="{{PUBLISH_DATE_ISO}}">
+                <meta itemprop="timeRequired" content="PT{{READING_TIME}}M">
+                <meta itemprop="wordCount" content="{{WORD_COUNT}}">
+                <meta itemprop="mainEntityOfPage" content="{{ARTICLE_URL}}">
+
+                <header class="s-bb68-hero">
+                    <div class="s-bb68-eyebrow-row">
+                        
+                        
+                    </div>
+
+                    <h1 itemprop="headline">{{ARTICLE_TITLE}}</h1>
+                    
+
+                    <div class="s-bb68-meta-grid" aria-label="Ключевая информация о статье">
+
+                        <div class="s-bb68-meta-card">
+                            <div class="s-bb68-meta-label">Дата публикации</div>
+                            <div class="s-bb68-meta-value"><time datetime="{{PUBLISH_DATE_ISO}}">{{PUBLISH_DATE_FORMATTED}}</time></div>
+                        </div>
+                        <div class="s-bb68-meta-card">
+                            <div class="s-bb68-meta-label">Время чтения</div>
+                            <div class="s-bb68-meta-value">{{READING_TIME}} мин</div>
+                        </div>
+                        <div class="s-bb68-meta-card">
+                            <div class="s-bb68-meta-label">Объём текста</div>
+                            <div class="s-bb68-meta-value">{{WORD_COUNT}} слов</div>
+                        </div>
+                    </div>
+
+                    <section class="s-bb68-author-box" itemscope itemtype="https://schema.org/Person" itemprop="author">
+                        <div class="s-bb68-author-avatar">
+                            <img
+                                src="{{AUTHOR_AVATAR}}"
+                                alt="{{AUTHOR_NAME}}"
+                                itemprop="image"
+                                onerror="this.src='https://ui-avatars.com/api/?name={{AUTHOR_NAME_ENCODED}}&size=160&background=f1f5f9&color=111827&bold=true'"
+                            >
+                        </div>
+                        <div class="s-bb68-author-info">
+                            <div class="s-bb68-author-name-row">
+                                <div class="s-bb68-author-name" itemprop="name">{{AUTHOR_NAME}}</div>
+                                <div class="s-bb68-author-badge" itemprop="jobTitle">Эксперт</div>
+                            </div>
+                            <p class="s-bb68-author-description" itemprop="description">{{AUTHOR_DESCRIPTION}}</p>
+                        </div>
+                    </section>
+                </header>
+
+                <div class="s-bb68-article-body">
+                    <div class="s-bb68-article-content">
+
+                        <div class="s-bb68-notion-prose" itemprop="articleBody">
+                            {{ARTICLE_HTML_CONTENT}}
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <section class="s-bb68-table-card s-bb68-table-section" aria-labelledby="comparison-title">
+                <div class="s-bb68-section-head">
+                    <h2 id="s-bb68-comparison-title">Таблица сравнения</h2>
+
+                </div>
+
+                <div class="s-bb68-table-wrap">
+                    {{TABLE_CONTENT}}
+                </div>
+            </section>
+
+            <footer class="s-bb68-footer-card s-bb68-article-footer">
+                <div class="s-bb68-footer-inner">
+                    <p>&copy; {{CURRENT_YEAR}}</p>
+                   
+                </div>
+            </footer>
+        </main>
     </div>
+
+
 </body>
 </html>
-
-
